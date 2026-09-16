@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import AddCrop from "./pages/AddCrop";
+import CropDetails from "./pages/CropDetails";
+import Dashboard from "./pages/Dashboard";
+import CropList from "./pages/CropList";
+import Footer from "./components/Footer";
+
+
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/add-crop" element={<AddCrop />} />
+        <Route path="/crop/:id" element={<CropDetails />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/crops" element={<CropList />} />  
+      </Routes>
+      <Footer />
+    </>
   );
 }
 
