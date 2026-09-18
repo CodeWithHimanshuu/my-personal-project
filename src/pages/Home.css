@@ -1,100 +1,902 @@
+/* =====================================================
+   CROP MARKETPLACE - HOME PAGE
+   ===================================================== */
+
 .home-page {
-  min-height: 80vh;
+  width: 100%;
+  background: #f8faf7;
+  color: #263326;
 }
+
+.home-page * {
+  box-sizing: border-box;
+}
+
+.home-page a {
+  text-decoration: none;
+}
+
+
+/* =====================================================
+   HERO SECTION
+   ===================================================== */
 
 .hero-section {
-  min-height: 420px;
-  padding: 60px 20px;
-  background: linear-gradient(135deg, #166534, #22c55e);
-  color: white;
-  text-align: center;
+  min-height: 92vh;
+  padding: 70px 8%;
 
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+
+  gap: 60px;
+
+  background: linear-gradient(
+    135deg,
+    #176b35 0%,
+    #17833d 50%,
+    #20a44e 100%
+  );
 }
 
-.hero-section h1 {
-  margin-bottom: 15px;
-  font-size: 48px;
+
+/* =====================================================
+   HERO CONTENT
+   ===================================================== */
+
+.hero-content {
+  width: 55%;
+  text-align: center;
 }
 
-.hero-section h2 {
-  margin-bottom: 15px;
-  font-size: 28px;
+
+/* =====================================================
+   HERO TAG
+   ===================================================== */
+
+.hero-tag {
+  display: inline-block;
+
+  padding: 10px 20px;
+  margin-bottom: 20px;
+
+  background: #ffffff !important;
+  color: #176b35 !important;
+
+  border-radius: 30px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
 }
 
-.hero-section p {
-  margin-bottom: 30px;
+
+/* =====================================================
+   MAIN HEADING - CROP MARKETPLACE
+   ===================================================== */
+
+.hero-content h1 {
+  margin: 0 0 18px;
+
+  font-size: 60px;
+  line-height: 1.1;
+
+  color: #000000 !important;
+
+  font-weight: 800;
+
+  text-align: center;
+}
+
+
+/* Crop + Marketplace BOTH BLACK */
+
+.hero-content h1 span {
+  color: #000000 !important;
+}
+
+
+/* =====================================================
+   SECOND HEADING
+   Best Crop Marketplace for Farmers & Buyers
+   ===================================================== */
+
+.hero-content h2 {
+  margin: 0 0 20px;
+
+  font-size: 30px;
+  line-height: 1.3;
+
+  color: #ffffff !important;
+
+  font-weight: 750;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+   Buy and sell fresh crops...
+   ===================================================== */
+
+.hero-content > p {
+  max-width: 700px;
+
+  margin: 0 auto;
+
   font-size: 18px;
+  line-height: 1.8;
+
+  color: #ffffff !important;
+
+  font-weight: 500;
+
+  text-align: center;
 }
+
+
+/* =====================================================
+   HERO BUTTONS
+   ===================================================== */
 
 .hero-buttons {
   display: flex;
-  gap: 15px;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 18px;
+
+  margin-top: 32px;
 }
 
-.hero-buttons button {
-  padding: 12px 24px;
-  border: none;
-  border-radius: 6px;
-  background: white;
-  color: #166534;
-  font-weight: bold;
+
+/* =====================================================
+   BOTH BUTTONS - SAME STYLE
+   ===================================================== */
+
+.primary-btn,
+.secondary-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 205px;
+
+  padding: 15px 28px;
+
+  border-radius: 10px;
+
+  font-size: 17px;
+  font-weight: 700;
+
   cursor: pointer;
+
+  transition: all 0.3s ease;
 }
 
-.hero-buttons button:hover {
-  background: #dcfce7;
+
+/* =====================================================
+   EXPLORE CROPS
+   WHITE BACKGROUND + GREEN TEXT
+   ===================================================== */
+
+.primary-btn {
+  background: #ffffff !important;
+
+  color: #168a3c !important;
+
+  border: 2px solid #ffffff !important;
+
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
 
-.features-section {
-  padding: 50px 30px;
+
+/* Explore Crops - Mouse Hover */
+
+.primary-btn:hover {
+  background: #168a3c !important;
+
+  color: #ffffff !important;
+
+  border-color: #168a3c !important;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Explore Crops - Click / Tap */
+
+.primary-btn:active {
+  background: #168a3c !important;
+
+  color: #ffffff !important;
+
+  border-color: #168a3c !important;
+
+  transform: scale(0.97);
+}
+
+
+/* =====================================================
+   ADD YOUR CROP
+   WHITE BACKGROUND + GREEN TEXT
+   ===================================================== */
+
+.secondary-btn {
+  background: #ffffff !important;
+
+  color: #168a3c !important;
+
+  border: 2px solid #ffffff !important;
+
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Add Your Crop - Hover */
+
+.secondary-btn:hover {
+  background: #168a3c !important;
+
+  color: #ffffff !important;
+
+  border-color: #168a3c !important;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Add Your Crop - Click / Tap */
+
+.secondary-btn:active {
+  background: #168a3c !important;
+
+  color: #ffffff !important;
+
+  border-color: #168a3c !important;
+
+  transform: scale(0.97);
+}
+
+
+/* =====================================================
+   HERO STATS
+   ===================================================== */
+
+.hero-stats {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 75px;
+
+  margin-top: 50px;
+
   text-align: center;
 }
 
-.features-section h2 {
-  margin-bottom: 30px;
-  color: #166534;
+
+/* Each Stat */
+
+.hero-stats > div {
+  min-width: 130px;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   STAT NUMBERS
+   500+ 250+ 1000+
+   ===================================================== */
+
+.hero-stats h3 {
+  margin: 0;
+
+  font-size: 32px;
+
+  color: #ffffff !important;
+
+  font-weight: 800;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   STAT LABELS
+   Crop Listings / Farmers / Happy Buyers
+   ===================================================== */
+
+.hero-stats p {
+  margin: 6px 0 0;
+
+  font-size: 16px;
+
+  color: #ffffff !important;
+
+  font-weight: 600;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   HERO IMAGE
+   ===================================================== */
+
+.hero-image {
+  width: 43%;
+}
+
+
+.hero-image img {
+  width: 100%;
+
+  height: 520px;
+
+  object-fit: cover;
+
+  border-radius: 25px;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.20);
+}
+
+
+/* =====================================================
+   COMMON SECTION HEADING
+   ===================================================== */
+
+.section-heading {
+  text-align: center;
+
+  max-width: 750px;
+
+  margin: 0 auto 55px;
+}
+
+
+.section-heading span,
+.why-content > span,
+.cta-content > span {
+  color: #39752e;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  font-size: 14px;
+
+  letter-spacing: 1px;
+}
+
+
+.section-heading h2 {
+  font-size: 42px;
+
+  margin: 12px 0;
+
+  color: #263b25;
+}
+
+
+.section-heading p {
+  color: #707970;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+
+/* =====================================================
+   HOW IT WORKS
+   ===================================================== */
+
+.how-section {
+  padding: 100px 8%;
+
+  background: #ffffff;
+}
+
+
+.steps {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+
+.step-card {
+  position: relative;
+
+  padding: 35px 25px;
+
+  background: #f8fbf7;
+
+  border: 1px solid #e3ece0;
+
+  border-radius: 15px;
+
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+
+.step-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+.step-number {
+  position: absolute;
+
+  top: 15px;
+  right: 18px;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+  color: #a3b99d;
+}
+
+
+.step-icon {
+  font-size: 45px;
+
+  margin: 20px 0;
+}
+
+
+.step-card h3 {
+  font-size: 22px;
+
+  margin-bottom: 12px;
+}
+
+
+.step-card p {
+  color: #707970;
+
+  line-height: 1.7;
+}
+
+
+/* =====================================================
+   CROPS SECTION
+   ===================================================== */
+
+.crops-section {
+  padding: 100px 8%;
+
+  background: #f1f7ef;
+}
+
+
+.crop-cards {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+
+.crop-card {
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.07);
+
+  transition: 0.3s;
+}
+
+
+.crop-card:hover {
+  transform: translateY(-8px);
+}
+
+
+.crop-card img {
+  width: 100%;
+
+  height: 240px;
+
+  object-fit: cover;
+}
+
+
+.crop-info {
+  padding: 25px;
+}
+
+
+.crop-category {
+  background: #e6f2e2;
+
+  color: #4d8c3b;
+
+  padding: 5px 12px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: bold;
+}
+
+
+.crop-info h3 {
+  font-size: 25px;
+
+  margin: 18px 0 10px;
+}
+
+
+.crop-info p {
+  color: #737b73;
+
+  line-height: 1.6;
+}
+
+
+.crop-bottom {
+  margin-top: 20px;
+
+  padding-top: 18px;
+
+  border-top: 1px solid #e7ebe6;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+
+.crop-bottom strong {
+  color: #39752e;
+
+  font-size: 17px;
+}
+
+
+.crop-bottom span {
+  color: #777;
+
+  font-size: 14px;
+}
+
+
+.view-all {
+  text-align: center;
+
+  margin-top: 40px;
+}
+
+
+.view-all a {
+  color: #4d8c3b;
+
+  font-weight: 700;
+
+  font-size: 17px;
+}
+
+
+/* =====================================================
+   WHY CHOOSE US
+   ===================================================== */
+
+.why-section {
+  padding: 100px 8%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 80px;
+
+  background: #ffffff;
+}
+
+
+.why-image {
+  width: 48%;
+}
+
+
+.why-image img {
+  width: 100%;
+
+  height: 600px;
+
+  object-fit: cover;
+
+  border-radius: 25px;
+}
+
+
+.why-content {
+  width: 52%;
+}
+
+
+.why-content h2 {
+  font-size: 43px;
+
+  line-height: 1.2;
+
+  margin: 15px 0 20px;
+}
+
+
+.why-content > p {
+  color: #707970;
+
+  line-height: 1.8;
+
+  font-size: 17px;
+}
+
+
+.benefits {
+  margin-top: 35px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 25px;
+}
+
+
+.benefit {
+  display: flex;
+
+  gap: 15px;
+}
+
+
+.benefit > div:first-child {
   font-size: 30px;
 }
 
-.features {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
+
+.benefit h3 {
+  margin: 0 0 8px;
+
+  font-size: 18px;
 }
 
-.feature-card {
-  width: 280px;
-  padding: 25px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-}
 
-.feature-card h3 {
-  margin-bottom: 12px;
-  color: #166534;
-}
+.benefit p {
+  margin: 0;
 
-.feature-card p {
-  color: #555;
+  color: #777;
+
   line-height: 1.5;
+
+  font-size: 14px;
 }
 
-@media (max-width: 600px) {
-  .hero-section h1 {
-    font-size: 36px;
-  }
 
-  .hero-section h2 {
-    font-size: 22px;
-  }
+/* =====================================================
+   CTA SECTION
+   ===================================================== */
 
-  .hero-buttons {
+.cta-section {
+  padding: 110px 8%;
+
+  background: linear-gradient(
+    135deg,
+    #315d2a,
+    #4d8c3b
+  );
+
+  text-align: center;
+}
+
+
+.cta-content {
+  max-width: 750px;
+
+  margin: auto;
+
+  color: #ffffff;
+}
+
+
+.cta-content > span {
+  color: #d9efd2;
+}
+
+
+.cta-content h2 {
+  font-size: 48px;
+
+  margin: 15px 0;
+}
+
+
+.cta-content p {
+  font-size: 18px;
+
+  line-height: 1.7;
+
+  color: #e5f0e2;
+}
+
+
+.cta-buttons {
+  margin-top: 30px;
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+}
+
+
+.cta-primary,
+.cta-secondary {
+  padding: 14px 28px;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+}
+
+
+.cta-primary {
+  background: #ffffff;
+
+  color: #39752e;
+}
+
+
+.cta-secondary {
+  border: 2px solid #ffffff;
+
+  color: #ffffff;
+}
+
+
+.cta-secondary:hover {
+  background: #ffffff;
+
+  color: #39752e;
+}
+
+
+/* =====================================================
+   RESPONSIVE - TABLET
+   ===================================================== */
+
+@media (max-width: 1000px) {
+
+  .hero-section {
     flex-direction: column;
+
+    padding: 60px 6%;
+  }
+
+
+  .hero-content,
+  .hero-image {
+    width: 100%;
+  }
+
+
+  .hero-content h1 {
+    font-size: 48px;
+  }
+
+
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .crop-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .why-section {
+    flex-direction: column;
+  }
+
+
+  .why-image,
+  .why-content {
+    width: 100%;
+  }
+}
+
+
+/* =====================================================
+   RESPONSIVE - MOBILE
+   ===================================================== */
+
+@media (max-width: 650px) {
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+
+  .hero-content h2 {
+    font-size: 24px;
+  }
+
+
+  .hero-content > p {
+    font-size: 16px;
+  }
+
+
+  .hero-image img {
+    height: 350px;
+  }
+
+
+  .hero-stats {
+    gap: 20px;
+
+    flex-wrap: wrap;
+  }
+
+
+  .steps,
+  .crop-cards,
+  .benefits {
+    grid-template-columns: 1fr;
+  }
+
+
+  .section-heading h2,
+  .why-content h2,
+  .cta-content h2 {
+    font-size: 32px;
+  }
+
+
+  .hero-buttons,
+  .cta-buttons {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+
+  .primary-btn,
+  .secondary-btn {
+    width: 220px;
   }
 }
