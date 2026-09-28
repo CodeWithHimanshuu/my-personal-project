@@ -5,10 +5,10 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <h2>My Website</h2>
+        <h2>Himanshu Singh</h2>
 
         <p>
-          © 2026 My Website. All Rights Reserved.
+          © 2026 Himanshu Singh. All Rights Reserved.
         </p>
 
         <div className="footer-links">

@@ -337,7 +337,7 @@
    ===================================================== */
 
 .hero-image {
-  width: 43%;
+  width: 75%;
 }
 
 
@@ -371,13 +371,13 @@
 .section-heading span,
 .why-content > span,
 .cta-content > span {
-  color: #39752e;
+  color: #000000;
 
   font-weight: 700;
 
   text-transform: uppercase;
 
-  font-size: 14px;
+  font-size: 25px;
 
   letter-spacing: 1px;
 }
@@ -393,9 +393,9 @@
 
 
 .section-heading p {
-  color: #707970;
+  color:#000000;
 
-  font-size: 17px;
+  font-size: 20px;
 
   line-height: 1.7;
 }
@@ -486,9 +486,9 @@
    ===================================================== */
 
 .crops-section {
-  padding: 100px 8%;
+  padding: 40px 8%;
 
-  background: #f1f7ef;
+  background: #168a3c;
 }
 
 
@@ -600,11 +600,11 @@
 
 
 .view-all a {
-  color: #4d8c3b;
+  color:#ffffff;
 
   font-weight: 700;
 
-  font-size: 17px;
+  font-size: 30px;
 }
 
 
@@ -714,7 +714,7 @@
 
   background: linear-gradient(
     135deg,
-    #315d2a,
+    #168a3c 0%,
     #4d8c3b
   );
 

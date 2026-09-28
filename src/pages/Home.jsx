@@ -128,13 +128,14 @@ function Home() {
 
         <div className="section-heading">
           <span>Fresh From Farms</span>
-          <h2>Popular Crops</h2>
+          
+          {/* <h2>Popular Crops</h2> */}
           <p>
             Explore some of the crops available on our marketplace.
           </p>
         </div>
 
-        <div className="crop-cards">
+        {/* <div className="crop-cards">
 
           <div className="crop-card">
 
@@ -208,7 +209,7 @@ function Home() {
 
           </div>
 
-        </div>
+        </div> */}
 
         <div className="view-all">
           <Link to="/crops">
