@@ -371,7 +371,7 @@
 .section-heading span,
 .why-content > span,
 .cta-content > span {
-  color: #000000;
+  color: #ffffff;
 
   font-weight: 700;
 
@@ -393,7 +393,7 @@
 
 
 .section-heading p {
-  color:#000000;
+  color:#ffffff;
 
   font-size: 20px;
 
@@ -600,11 +600,17 @@
 
 
 .view-all a {
-  color:#ffffff;
-
+  color: #ffffff;
   font-weight: 700;
-
   font-size: 30px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.view-all a:hover {
+  color: #159447;
+  background-color: #ffffff;
 }
 
 
@@ -774,6 +780,12 @@
 
 
 .cta-primary {
+   border: 2px solid #ffffff;
+
+  color: #ffffff
+}
+
+.cta-primary:hover {
   background: #ffffff;
 
   color: #39752e;
