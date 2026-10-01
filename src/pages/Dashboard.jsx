@@ -1,5 +1,6 @@
 import React from "react";
 import "./Dashboard.css";
+import { Link } from "react-router-dom";
 
 function Dashboard() {
   return (
@@ -15,10 +16,10 @@ function Dashboard() {
           <p>View and manage your listed crops.</p>
         </div>
 
-        <div className="dashboard-card">
+        <Link to="/crops" className="dashboard-card">
           <h2>🛒 Buy Crops</h2>
           <p>Search and find crops from farmers.</p>
-        </div>
+        </Link>
 
         <div className="dashboard-card">
           <h2>👨‍🌾 Farmer Connect</h2>

@@ -21,12 +21,13 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<Login />} /> 
         <Route path="/register" element={<Register />} />
         <Route path="/add-crop" element={<AddCrop />} />
         <Route path="/crop/:id" element={<CropDetails />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/crops" element={<CropList />} />  
+        <Route path="/crops" element={<CropList />} /> 
+         
       </Routes>
       <Footer />
     </>
